@@ -176,6 +176,11 @@ class ScriptEntity(ToggleEntity):
         return self.script.name
 
     @property
+    def unique_id(self):
+        """Return unique ID."""
+        return self.object_id
+
+    @property
     def state_attributes(self):
         """Return the state attributes."""
         attrs = {}
